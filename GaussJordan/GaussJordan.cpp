@@ -96,14 +96,17 @@ No regresa ningún valor.
 */
 template <typename matriz>
 void GaussJordan(matriz & miMatriz) {
-    //Se usa la función .size para
+    //Se usa la función .size para obtener el tamaño de (n) de miMatriz
     int n = miMatriz.size();
     //Definimos una variable temporal para almacenar datos momentaneamente
     float temp;
     for (int i = 0; i < n; i++) {
         for (int j = i + 1; j < n; j++) {
-            //Se almacena
+            //Se divide el valor de mi matriz en j,i entre el valor en i,i y el resultado se almacena en la variable temporal.
             temp = miMatriz[j][i] / miMatriz[i][i];
+            /*un tercer ciclo para eliminar el valor en jk (los valores de la parte de abajo respecto a la diagonal) 
+            con ayuda del factor temporal que es el valor inverso a miMatriz[j][k] se eliminan los valores iguales miMatriz[j][k] es igual a mi Matriz[i][k]*temp 
+            por lo tanto al restarlos nos da 0*/ 
             for (int k = i; k < n + 1; k++) {
                 miMatriz[j][k] -= temp * miMatriz[i][k];
             }
