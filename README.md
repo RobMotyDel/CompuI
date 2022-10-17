@@ -3,7 +3,7 @@
 Repository to upload c++ and python exercises
 
 
-## Until now it counts with the exercises:
+## Until now, the exersises that contains are:
 - Arreglos
 - Calculadora 
 - Gauss Jordan method 
