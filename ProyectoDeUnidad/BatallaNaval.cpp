@@ -79,20 +79,24 @@ void BarcoTresPiezas(int mat[10][10]){
     cout << "Ahora ingresa una direccion L para izquierda, R para derecha, D para abajo y U para arriba" << endl;
     cin >> dir;
     if(dir == 'L'){
-        mat[fil-1][col-2] = 3;
-        mat[fil-1][col-3] = 3;
+        for(int i = 0; i > -3; i-- ){
+            mat[fil-1][col-1+i] = 3;
+        }
     }
     if(dir == 'R'){
-        mat[fil-1][col] = 3;
-        mat[fil-1][col+1] = 3;
+        for(int i = 0; i < 3; i++){
+            mat[fil-1][col-1+i] = 3;
+        }
     }
     if(dir == 'U'){
-        mat[fil-2][col-1] = 3;
-        mat[fil-3][col-1] = 3;
+        for(int i = 0; i > -3;i--){
+            mat[fil-1+i][col-1] = 3;
+        }
     }
     if(dir == 'D'){
-        mat[fil][col-1] = 3;
-        mat[fil+1][col-1] = 3;
+        for(int i = 0; i < 3; i++){
+            mat[fil-1+i][col-1] = 3;
+        }
     }
     mat[fil-1][col-1] = 3;
 }
@@ -108,24 +112,24 @@ void BarcoCuatroPiezas(int mat[10][10]){
     cout << "Ahora ingresa una direccion L para izquierda, R para derecha, D para abajo y U para arriba" << endl;
     cin >> dir;
     if(dir == 'L'){
-        mat[fil-1][col-2] = 4;
-        mat[fil-1][col-3] = 4;
-        mat[fil-1][col-4] = 4;
+        for(int i = 0; i > -4; i-- ){
+            mat[fil-1][col-1+i] = 4;
+        }
     }
     if(dir == 'R'){
-        mat[fil-1][col] = 4;
-        mat[fil-1][col+1] = 4;
-        mat[fil-1][col+2] = 4;
+        for(int i = 0; i < 4; i++){
+            mat[fil-1][col-1+i] = 4;
+        }
     }
     if(dir == 'U'){
-        mat[fil-2][col-1] = 4;
-        mat[fil-3][col-1] = 4;
-        mat[fil-4][col-1] = 4;
+        for(int i = 0; i > -4;i--){
+            mat[fil-1+i][col-1] = 4;
+        }
     }
     if(dir == 'D'){
-        mat[fil][col-1] = 4;
-        mat[fil+1][col-1] = 4;
-        mat[fil+2][col-1] = 4;
+        for(int i = 0; i < 4; i++){
+            mat[fil-1+i][col-1] = 4;
+        }
     }
     mat[fil-1][col-1] = 4;
 }
@@ -140,29 +144,25 @@ void BarcoCincoPiezas(int mat[10][10]){
      cin >> col;
      cout << "Ahora ingresa una direccion L para izquierda, R para derecha, D para abajo y U para arriba" << endl;
      cin >> dir;
-     if(dir == 'L'){
-         mat[fil-1][col-2] = 5;
-         mat[fil-1][col-3] = 5;
-         mat[fil-1][col-4] = 5;
-         mat[fil-1][col-5] = 5;
-     }
-     if(dir == 'R'){
-         mat[fil-1][col] = 5;
-         mat[fil-1][col+1] = 5;
-         mat[fil-1][col+2] = 5;
-         mat[fil-1][col+3] = 5;
-     }
-     if(dir == 'U'){
-         mat[fil-2][col-1] = 5;
-         mat[fil-3][col-1] = 5;
-         mat[fil-4][col-1] = 5;
-         mat[fil-5][col-1] = 5;
-     }
-     if(dir == 'D'){
-         mat[fil][col-1] = 5;
-         mat[fil+1][col-1] = 5;
-         mat[fil+2][col-1] = 5;
-         mat[fil+3][col-1] = 5;
-     }
-     mat[fil-1][col-1] = 5;
+    if(dir == 'L'){
+        for(int i = 0; i > -5; i-- ){
+            mat[fil-1][col-1+i] = 5;
+        }
+    }
+    if(dir == 'R'){
+        for(int i = 0; i < 5; i++){
+            mat[fil-1][col-1+i] = 5;
+        }
+    }
+    if(dir == 'U'){
+        for(int i = 0; i > -5;i--){
+            mat[fil-1+i][col-1] = 5;
+        }
+    }
+    if(dir == 'D'){
+        for(int i = 0; i < 5; i++){
+            mat[fil-1+i][col-1] = 5;
+        }
+    }
+    mat[fil-1][col-1] = 5;
 }
