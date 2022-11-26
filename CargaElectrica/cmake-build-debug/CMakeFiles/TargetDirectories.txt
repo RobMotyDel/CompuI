@@ -1,0 +1,3 @@
+D:/Users/rober/CLionProjects/CargaElectrica/cmake-build-debug/CMakeFiles/CargaElectrica.dir
+D:/Users/rober/CLionProjects/CargaElectrica/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Users/rober/CLionProjects/CargaElectrica/cmake-build-debug/CMakeFiles/rebuild_cache.dir
